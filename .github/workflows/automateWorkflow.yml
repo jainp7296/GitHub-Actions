@@ -17,7 +17,7 @@ on:
 jobs:
   build:
 
-    runs-on: CAI-ENTERPRISE
+    runs-on: ubuntu-latest
     
 
     steps:
