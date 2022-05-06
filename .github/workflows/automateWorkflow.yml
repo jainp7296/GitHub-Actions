@@ -27,7 +27,14 @@ jobs:
       shell: bash
       run: wget https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.14-bin.zip
            
-           wget https://archive.apache.org/dist/ant/ivy/2.3.0/apache-ivy-2.3.0-bin.zip
+           
+    - name: Setup Apache-IVY v2.3.0
+      shell: bash
+      run:  wget https://archive.apache.org/dist/ant/ivy/2.3.0/apache-ivy-2.3.0-bin.zip
+            unzip apache-ivy-2.3.0-bin.zip
+            
+          
+           
          
            
            
