@@ -25,5 +25,7 @@ jobs:
         
     - name: Install ant
       run: wget https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.14-bin.zip
+           unzip apache-ant-1.9.14-bin.zip
+           ant -version 
          
    
