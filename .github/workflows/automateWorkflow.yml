@@ -5,13 +5,7 @@ name: Smoke Test Workflow
 
 on:
   push:
-    branches: [ master ]
-    
-  pull_request:
-     types: [closed]
-  issue_comment:
-    types: [created, deleted]
-    
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -31,4 +25,5 @@ jobs:
         
     - name: Install ant
       run: wget https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.14-bin.zip
+           ant -version
    
