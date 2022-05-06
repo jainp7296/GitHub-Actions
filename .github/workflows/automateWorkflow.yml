@@ -1,11 +1,11 @@
-# This workflow will build a Java project with Ant
+unzip -d \usr\local\bin apache-ant-1.9.14-bin.zipunzip -d \usr\local\bin apache-ant-1.9.14-bin.zip# This workflow will build a Java project with Ant
 # For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-ant
 
 name: Smoke Test Workflow 
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master_local ]
   workflow_dispatch:
 
 jobs:
@@ -23,22 +23,7 @@ jobs:
         java-version: '8'
         distribution: 'Zulu OpenJDK'
         
-    - name: Setup Ant 1.9.14
-      shell: bash
+    - name: Install ant
       run: wget https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.14-bin.zip
-           
-           
-    - name: Setup Apache-IVY v2.3.0
-      shell: bash
-      run:  wget https://archive.apache.org/dist/ant/ivy/2.3.0/apache-ivy-2.3.0-bin.zip
-            unzip apache-ivy-2.3.0-bin.zip
-            
-          
-           
-         
-           
-           
-           
-      
-         
+           unzip -d \usr\local\bin apache-ant-1.9.14-bin.zip
    
