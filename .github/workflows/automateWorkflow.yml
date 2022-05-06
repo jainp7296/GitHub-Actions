@@ -23,10 +23,11 @@ jobs:
         java-version: '8'
         distribution: 'Zulu OpenJDK'
         
-    - name: Install ant
+    - name: Setup Ant 1.9.14
+      shell: bash
       run: wget https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.14-bin.zip
-           cp apache-ant-1.9.14-bin.zip usr/local/bin
+           unzip apache-ant-1.9.14-bin.zip
            
-            
+      
          
    
