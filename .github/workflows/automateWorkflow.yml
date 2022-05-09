@@ -23,3 +23,8 @@ jobs:
     - name: Install ant
       run: wget https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.14-bin.zip
            whereis apache-ant-1.9.14-bin.zip
+    - name: Ant location 
+      shell: bash
+      run: ant -version
+       
+     
