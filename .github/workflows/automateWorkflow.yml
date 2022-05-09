@@ -2,8 +2,7 @@
 name: Smoke Test Workflow 
 
 on:
-  push:
-    branches: [ master_local ]
+ 
   workflow_dispatch:
 
 jobs:
