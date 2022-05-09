@@ -28,12 +28,12 @@ jobs:
       run: java -version 
     - name: java location 
       
-      run: whereis java 
-    - name: java jdk 
+      run: whereis java && whereis ant 
+    - name: ant location 
       
-      run: locate openjdk 
-      
-      
+      run: whereis ant
+     
+          
       
        
      
