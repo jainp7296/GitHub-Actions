@@ -25,6 +25,8 @@ jobs:
           
     - name: Ant location 
       
-      run: ant -version
+      run: java -version 
+      
+      
        
      
